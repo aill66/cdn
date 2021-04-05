@@ -1,0 +1,28 @@
+    <style>
+    .ewm-left{float: left; text-align: center; padding-left: 10px}
+    .ewm-right{float: right; text-align: center; padding-right: 10px}
+    /*弹出*/
+    .footer_flex:hover span { display: block; }
+    .footer_flex span { display: none; color: #fff; font-size: 15px; line-height: 45px; }
+    .footer_flex .shang { padding-top: 10px; font-size: 16px; color: #fff;}
+    .footer_flex { width: 42px; height: 42px; background-color: #f56c6c; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; margin: 0 0 21px 50px; float: left; text-align: center; cursor: pointer; position: relative; z-index: 10; }
+    .footer_flex:hover { background-color: #409eff; }
+    /*top*/
+    .footer_flex:hover .flex-footer { display: block; }
+    .footer_flex .flex-footer { border-radius: 8px; width: 260px; height: 150px; position: absolute; left: -105px; top: -160px; text-align: center; padding-top: 10px; background: #fff; display: none; }
+    </style>
+    <div class="footer_flex">
+          <p class='shang'>赏</p>
+          <p style="margin-top:16px; color:#909399; font-size:12px">打赏</p>
+          <div class="flex-footer">
+			  <div class="ewm-left">
+              <img src="https://cdn.jsdelivr.net/gh/aill66/cdn/wxskm.png" width='108' height='108'>
+			  <p>微信打赏</p>
+			  </div>
+			  <div class="ewm-right">
+			  <img src="https://cdn.jsdelivr.net/gh/aill66/cdn/zfbskm.png" width='108' height='108'>
+			  <p>支付宝打赏</p>
+			  </div>
+          </div>
+		  <span>赏</span>
+    </div>
