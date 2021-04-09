@@ -1,0 +1,38 @@
+    <style>
+    /*弹出*/
+    .footer_flex { width: 42px; height: 42px; background-color: #f56c6c; border-radius: 50%; cursor: pointer; position: relative; z-index: 10; display: flex; justify-content: center; align-items: center; color:#909399; font-size:12px}
+    .footer_flex:hover { background-color: #409eff; }
+    /*top*/
+    .footer_flex:hover .flex-footer { display: block; }
+    .footer_flex .flex-footer { box-shadow: 0px 0px 5px 0px #409eff; border-radius: 8px; width: 156px; height: 166px; position: absolute; left: -52px; top: -175px; text-align: center; padding-top: 15px; background: #fff; display: none; }
+    .flex-footer input{vertical-align:middle; margin-bottom:3px; *margin-bottom:3px;}
+    </style>
+    <script language="javascript" type="text/javascript">
+	function zfb(){
+     var obj=document.getElementById("ewm");
+	 obj.src="https://cdn.jsdelivr.net/gh/aill66/cdn/zfbskm.png";
+	};
+	function wx(){
+     var obj=document.getElementById("ewm");
+	 obj.src="https://cdn.jsdelivr.net/gh/aill66/cdn/weskm.png";
+	};
+	function qq(){
+     var obj=document.getElementById("ewm");
+	 obj.src="https://cdn.jsdelivr.net/gh/aill66/cdn/qqskm.png";
+	};
+	</script> 
+    <div style="text-align: center; margin-left:30px;">
+    <div class="footer_flex">
+        <img src="https://cdn.jsdelivr.net/gh/aill66/cdn/shang.png" width="20px" height="20px">
+        <div class="flex-footer">
+        <img id="ewm" src="https://cdn.jsdelivr.net/gh/aill66/cdn/weskm.png" width="120px" height="120px">
+        <div style="margin-top:5px;">
+		<label><input name="pay" type="radio" value="wx" checked="checked" onclick="wx()">微信</label>
+		<label style="margin-left:3px; display:block-inline"><input name="pay" type="radio" value="zfb" onclick="zfb()">支付宝</label>
+		<label style="margin-left:3px;"><input name="pay" type="radio" value="qq" onclick="qq()">QQ</label>
+		</div>
+		<div style="height:40px; background:rgba(0,0,0,0);"></div>
+        </div>
+    </div>
+    <p style="margin-top:5px; color:#909399; font-size:12px">打赏</p>
+    </div>
